@@ -116,7 +116,7 @@ func filterSomeLowFriendsNodes(records []Record, prob float64, lowLimit int) []R
 }
 
 func addSomeConnections(records []Record) []Record {
-	count := 0 * len(records)
+	count := len(records) / 2
 
 	for range count {
 		from, to := rand.IntN(len(records)), rand.IntN(len(records))
